@@ -1,0 +1,122 @@
+<footer class="footer" data-background-color="black">
+  <div class="container justify-content-center">
+	<div class="row">
+		<div class="col-md-3">
+			<ul class="social-links circle small clearfix ">
+			{{ range .Site.Menus.footersocial }}
+				<li>
+				  <a href="{{ .URL | relURL }}">{{ .Pre }} {{ .Name }}</a>
+				</li>
+			  {{ end }}
+			 </ul>
+			<nav class="nav flex-column">
+			 {{ range .Site.Menus.main }}
+				<li class="nav-item">
+					<a  class="nav-link" href="{{ .URL | relLangURL }}"{{ if $.IsHome }} data-target="{{ .URL }}"{{ end }}>
+						<span>{{ .Name }}</span>
+					  </a>
+				</li>
+				{{ end }}
+			</nav>
+			
+			<!-- Latest Blog Post -->
+			<h5 class="letter-spacing-1">DOCTOR'S BLOG</h5>
+			<ul class="footer-posts list-unstyled">
+				<li>
+					<a href="#">Donec sed odio dui. Nulla vitae elit libero, a pharetra augue</a>
+					<small>29 June 2017</small>
+				</li>
+				
+				<li>
+					<a href="#">Nullam id dolor id nibh ultricies</a>
+					<small>29 June 2017</small>
+				</li>
+				<li>
+					<a href="#">Duis mollis, est non commodo luctus</a>
+					<small>29 June 2017</small>
+				</li>
+				
+			</ul>
+			<!-- /Latest Blog Post -->
+		</div>
+
+		<div class="col-md-3">
+			<h5 class="letter-spacing-1">STORY</h5>
+			<!-- Small Description -->
+			<p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+			<!-- Contact Address -->
+			<address>
+				<ul class="list-unstyled">
+					<li class="footer-sprite address">
+						PO Box 21132<br>
+						Here Weare St, Melbourne<br>
+						Vivas 2355 Australia<br>
+					</li>
+					<li class="footer-sprite phone">
+						Phone: 1-800-565-2390
+					</li>
+					<li class="footer-sprite email">
+						<a href="mailto:support@yourname.com">support@yourname.com</a>
+					</li>
+				</ul>
+			</address>
+			<!-- /Contact Address -->
+
+		</div>
+
+		<div class="col-md-3">
+			<!-- Doctors -->
+			<h5 class="letter-spacing-1">DOCTORS</h5>
+			<nav class="nav flex-column">
+				<nav class="nav flex-column">
+				 {{ range .Site.Menus.main }}
+					<li class="nav-item">
+						<a  class="nav-link" href="{{ .URL | relLangURL }}"{{ if $.IsHome }} data-target="{{ .URL }}"{{ end }}>
+							<span>{{ .Name }}</span>
+						  </a>
+					</li>
+					
+					{{ end }}
+				</nav>
+			</nav>
+
+		</div>
+
+		<div class="col-md-3">
+			<h5 class="letter-spacing-1">LOCATIONS</h5>
+			
+			<address>
+				<ul class="list-unstyled">
+					<li class="footer-sprite address">
+						PO Box 21132<br>
+						Here Weare St, Melbourne<br>
+						Vivas 2355 Australia<br>
+					</li>
+					<li class="footer-sprite phone">
+						Phone: 1-800-565-2390
+					</li>
+					<li class="footer-sprite email">
+						<a href="mailto:support@yourname.com">support@yourname.com</a>
+					</li>
+				</ul>
+			</address>
+
+
+		</div>
+
+	</div>
+  
+  
+  
+    <nav class="copyright">
+	    <ul>
+	    {{ range .Site.Menus.footer }}
+        <li>
+          <a href="{{ .URL | relURL }}">{{ .Pre }} {{ .Name }}</a>
+        </li>
+      {{ end }}
+      </ul>
+    </nav>
+	
+  </div>
+</footer>

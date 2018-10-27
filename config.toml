@@ -1,0 +1,320 @@
+theme = "hugo-now-ui"
+baseurl = "https://vayushri-2030.firebaseapp.com/"
+languageCode = "en-us"
+title = "Vayushri Hospitals"
+googleAnalytics = ""
+disqusShortname = ""
+ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
+#enableGitInfo = true
+publishDir = "/public"
+themesDir = "/themes"
+
+[permalinks]
+    post = "/:year/:month/:day/:slug/"
+
+	
+[[menu.main]]
+    name = "Our Practice"
+    pre = "<i class='now-ui-icons ui-1_settings-gear-63'></i>"
+    url = "/our-practice/"
+    weight = 1
+    identifier = "our-practice"
+
+[[menu.main]]
+    name = "Why we are different"
+    pre = "<i class='now-ui-icons files_paper'></i>"
+    url = "/why-we-are-different/"
+    weight = 11
+    parent = "our-practice"
+[[menu.main]]
+    name = "Fertility Team"
+    pre = "<i class='now-ui-icons files_paper'></i>"
+    url = "/fertility-team/"
+    weight = 12
+    parent = "our-practice"
+[[menu.main]]
+    name = "Fertility Lab"
+    pre = "<i class='now-ui-icons files_paper'></i>"
+    url = "/fertility-lab/"
+    weight = 13
+    parent = "our-practice"
+[[menu.main]]
+    name = "Success Rates"
+    pre = "<i class='now-ui-icons files_paper'></i>"
+    url = "/success-rates/"
+    weight = 14
+    parent = "our-practice"
+
+[[menu.main]]
+    name = "Reviews"
+    pre = "<i class='now-ui-icons files_paper'></i>"
+    url = "/reviews/"
+    weight = 15
+    parent = "our-practice"
+
+[[menu.main]]
+    name = "Read Success Stories"
+    pre = "<i class='now-ui-icons files_paper'></i>"
+    url = "/read-success-stories/"
+    weight = 16
+    parent = "our-practice"
+
+[[menu.main]]
+    name = "Share your story"
+    pre = "<i class='now-ui-icons files_paper'></i>"
+    url = "/share-your-story/"
+    weight = 17
+    parent = "our-practice"
+	
+
+[[menu.main]]
+    name = "Management Team"
+    pre = "<i class='now-ui-icons files_paper'></i>"
+    url = "/management-team/"
+    weight = 18
+    parent = "our-practice"
+
+[[menu.main]]
+    name = "Treatments"
+    pre = "<i class='now-ui-icons ui-1_settings-gear-63'></i>"
+    url = "/treatments/"
+    weight = 2
+    identifier = "treatments"
+
+[[menu.main]]
+    name = "Pregnancy Care"
+    pre = "<i class='now-ui-icons files_paper'></i>"
+    url = "/pregnancy-care/"
+    weight = 21
+	identifier = "pregnancy-care"
+    parent = "treatments"
+
+	
+[[menu.main]]
+    name = "Infertility"
+    pre = "<i class='now-ui-icons files_paper'></i>"
+    url = "/infertility/"
+    weight = 22
+	identifier = "infertility"
+    parent = "treatments"
+	
+[[menu.main]]
+    name = "Fertility Preservation"
+    pre = "<i class='now-ui-icons files_paper'></i>"
+    url = "/fertility-preservation/"
+    weight = 23
+	identifier = "fertility-preservation"
+    parent = "treatments"
+	
+
+[[menu.main]]
+    name = "Collaborative Reproduction"
+    pre = "<i class='now-ui-icons ui-1_settings-gear-63'></i>"
+    url = "/collaborative-reproduction/"
+    weight = 3
+    identifier = "collaborative-reproduction"
+
+	
+[[menu.main]]
+    name = "Egg Donation"
+    pre = "<i class='now-ui-icons files_paper'></i>"
+    url = "/egg-donation/"
+    weight = 31
+    parent = "collaborative-reproduction"
+[[menu.main]]
+    name = "Become an Egg Donor"
+    pre = "<i class='now-ui-icons files_paper'></i>"
+    url = "/become-eggd-donor/"
+    weight = 32
+    parent = "collaborative-reproduction"
+	
+[[menu.main]]
+    name = "Sperm Donation"
+    pre = "<i class='now-ui-icons files_paper'></i>"
+    url = "/sperm-donation/"
+    weight = 33
+    parent = "collaborative-reproduction"
+	
+[[menu.main]]
+    name = "Surrogacy"
+    pre = "<i class='now-ui-icons files_paper'></i>"
+    url = "/surrogacy/"
+    weight = 34
+    parent = "collaborative-reproduction"
+	
+[[menu.main]]
+    name = "Embryo Donation"
+    pre = "<i class='now-ui-icons files_paper'></i>"
+    url = "/embryo-donation/"
+    weight = 35
+    parent = "collaborative-reproduction"
+	
+[[menu.main]]
+    name = "International Family"
+    pre = "<i class='now-ui-icons files_paper'></i>"
+    url = "/international-family/"
+    weight = 36
+    parent = "collaborative-reproduction"
+	
+
+[[menu.main]]
+    name = "Patient Resources"
+    pre = "<i class='now-ui-icons ui-1_settings-gear-63'></i>"
+    url = "/patient-resources/"
+    weight = 4
+    identifier = "patient-resources"
+
+	
+[[menu.main]]
+    name = "Infertility in Women"
+    pre = "<i class='now-ui-icons files_paper'></i>"
+    url = "/infertility-women/"
+    weight = 41
+    parent = "patient-resources"
+	
+	
+[[menu.main]]
+    name = "The Monthly ovulation cycle"
+    pre = "<i class='now-ui-icons files_paper'></i>"
+    url = "/monthly-ovulation-cycle/"
+    weight = 42
+    parent = "patient-resources"
+	
+[[menu.main]]
+    name = "Infertility in Men"
+    pre = "<i class='now-ui-icons files_paper'></i>"
+    url = "/-nfertility-men/"
+    weight = 43
+    parent = "patient-resources"
+	
+[[menu.main]]
+    name = "The Typical Infertility Treatment Journey"
+    pre = "<i class='now-ui-icons files_paper'></i>"
+    url = "/typical-infertility-treatment/"
+    weight = 44
+    parent = "patient-resources"
+	
+[[menu.main]]
+    name = "Wellness & Fertility"
+    pre = "<i class='now-ui-icons files_paper'></i>"
+    url = "/wellness-fertility/"
+    weight = 45
+    parent = "patient-resources"
+	
+[[menu.main]]
+    name = "Extending the Biological Clock"
+    pre = "<i class='now-ui-icons files_paper'></i>"
+    url = "/extending-biological-clock/"
+    weight = 46
+    parent = "patient-resources"
+	
+[[menu.main]]
+    name = "Doctors Blog"
+    pre = "<i class='now-ui-icons files_paper'></i>"
+    url = "/doctors-blog/"
+    weight = 47
+    parent = "patient-resources"
+	
+	
+
+
+[[menu.main]]
+    name = "First Steps"
+    pre = "<i class='now-ui-icons ui-1_settings-gear-63'></i>"
+    url = "/first-steps/"
+    weight = 5
+    identifier = "first-steps"
+
+	
+[[menu.main]]
+    name = "Request an Appointment"
+    pre = "<i class='now-ui-icons files_paper'></i>"
+    url = "/request-appointment/"
+    weight = 51
+    parent = "first-steps"
+	
+	
+[[menu.main]]
+    name = "Your First Visit"
+    pre = "<i class='now-ui-icons files_paper'></i>"
+    url = "/your-first-visit/"
+    weight = 52
+    parent = "first-steps"
+
+	
+[[menu.main]]
+    name = "Contact"
+    pre = "<i class='now-ui-icons ui-1_settings-gear-63'></i>"
+    url = "/contact/"
+    weight = 6
+    identifier = "contact"
+
+	
+[[menu.main]]
+    name = "Make an Appointment"
+    pre = "<i class='now-ui-icons files_paper'></i>"
+    url = "/make-appointment/"
+    weight = 61
+    parent = "contact"	
+	
+[[menu.main]]
+    name = "Visit Us"
+    pre = "<i class='now-ui-icons files_paper'></i>"
+    url = "/visit-us/"
+    weight = 62
+    parent = "contact"
+	
+[[menu.main]]
+    name = "Call Us"
+    pre = "<i class='now-ui-icons files_paper'></i>"
+    url = "/call-us/"
+    weight = 63
+    parent = "contact"
+	
+[[menu.main]]
+    name = "Ask Dr Priya"
+    pre = "<i class='now-ui-icons files_paper'></i>"
+    url = "/ask-dr-priya/"
+    weight = 64
+    parent = "contact"
+
+    
+
+
+[[menu.footer]]
+    identifier = "copyright"
+    name = "Vayushri Hospitals Chennai"
+    pre = "<i class='fa fa-balance-scale'></i>"
+    url = "https://vayushrihospitals.com"
+    weight = 1
+
+[[menu.footersocial]]
+	identifier = "facebook"
+    pre = "<i class='fa fa-facebook'></i>"
+    url = "https://www.facebook.com/vayushri/"
+    weight = 1
+	
+[[menu.footersocial]]
+	identifier = "youtube"
+    pre = "<i class='fa fa-youtube'></i>"
+    url = "#"
+    weight = 2
+
+
+[params]
+    background = "/images/ivfimage.jpg"
+    tint = "none"
+    custom_css = ["css/highlight.min.css"]
+    custom_js = []
+    date_format = "Mon, Jan 2, 2006"
+    description = "A website built through Hugo and blogdown."
+
+    # options for highlight.js (version, additional languages, and theme)
+    highlightjsVersion = "9.10.0"
+    highlightCDN = "//cdn.bootcss.com"
+    highlightjsLang = ["r", "yaml"]
+    highlightjsTheme = "github"
+
+
+    
+

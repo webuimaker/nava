@@ -1,0 +1,65 @@
+.hljs{display:block;overflow-x:auto;padding:0.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:bold}.hljs-number,.hljs-literal,.hljs-variable,.hljs-template-variable,.hljs-tag .hljs-attr{color:#008080}.hljs-string,.hljs-doctag{color:#d14}.hljs-title,.hljs-section,.hljs-selector-id{color:#900;font-weight:bold}.hljs-subst{font-weight:normal}.hljs-type,.hljs-class .hljs-title{color:#458;font-weight:bold}.hljs-tag,.hljs-name,.hljs-attribute{color:#000080;font-weight:normal}.hljs-regexp,.hljs-link{color:#009926}.hljs-symbol,.hljs-bullet{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:bold}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:bold}
+.footer {
+	font-size:13px;;
+}
+.footer .copyright, .footer .copyright ul{
+	width:100%;
+	text-align:center;
+}
+.footer ul.social-links li a{
+	padding:0px;
+}
+.footer nav.nav>li>a{
+	padding-left: 5px;
+}
+
+.footer nav.nav>li>a:before {
+    content: "\f105";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    padding-right: 10px;
+}
+.footer .letter-spacing-1{
+	font-size:1rem;
+	border-bottom:1px solid #efefef;
+	padding-bottom:10px;
+}
+
+.footer .list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer ul.footer-posts>li {
+    padding: 15px 0;
+    border-bottom: rgba(255,255,255,0.07) 1px solid;
+}
+.footer ul.footer-posts>li a {
+    color: rgba(255,255,255,0.6);
+    text-decoration: none;
+	padding:0px;
+	padding-bottom:8px;
+}
+.footer ul.footer-posts>li a:hover {
+    color: rgba(255,255,255,0.9);
+}
+.footer  ul.footer-posts>li>small {
+    display: block;
+	font-size:70%;
+}
+
+.footer address .footer-sprite.address {
+    background-position: 0 0;
+}
+.footer address .footer-sprite {
+    margin-bottom: 20px;
+    padding-left: 30px;
+    background: url(../images/footer_sprite.png) no-repeat 0 0;
+}
+.footer address .footer-sprite.phone {
+    background-position: 0 -138px;
+    line-height: 30px;
+}
+.footer address .footer-sprite.email {
+    background-position: 0 -247px;
+}
