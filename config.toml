@@ -1,5 +1,5 @@
 theme = "hugo-now-ui"
-baseurl = "/"
+baseurl = "https://vayushri-2030.firebaseapp.com/"
 languageCode = "en-us"
 title = "Vayushri Hospitals"
 googleAnalytics = ""
